@@ -16,5 +16,5 @@ print metrics.accuracy_score(y_test, y_pred)
 
 knn = KNeighborsClassifier(n_neighbors=5)
 scores = cross_val_score(knn, x, y, cv=10, scoring = 'accuracy')
-print scores 
+print scores
 print scores.mean()
